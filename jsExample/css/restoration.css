@@ -1,0 +1,15 @@
+/* Restoration Page Content Settings (General text & spacing Settings) */
+
+	div#content div#restoration
+	{
+		margin: 50px 10px auto 10px;
+		text-align: center;
+		font-size: large;
+	}
+
+	div#content div#restoration ul
+	{
+		display: block;
+		margin-left: 375px;
+		text-align: left;
+	}

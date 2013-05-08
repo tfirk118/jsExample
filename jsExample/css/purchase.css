@@ -1,0 +1,103 @@
+/* Purchase Page Content Settings */
+
+	/* Picture Title & Artist Spacing Settings */
+
+		div#content h1
+		{
+			margin: 50px auto 0px auto;
+		}
+
+		div#content h2
+		{
+			margin-bottom: 10px;
+		}
+
+	/* Picture Image & Frame Image Settings */
+	/* Places both Images in the Center of the Page, Side-By-Side */
+	/* Removes Any Link Borders */
+
+		div#content div#pictureDiv
+		{
+			width: 50%;
+			float: left;
+		}
+
+		div#content div#pictureDiv img#pictureImage
+		{
+			float: right;
+			border: none;
+		}
+
+		div#content div#frameDiv
+		{
+			width: 50%;
+			float: right;
+		}
+
+		div#content div#frameDiv img#frameImage
+		{
+			border: none;
+		}
+
+	/* Places Purchase Form Under the Images */
+
+		div#content div#purchaseForm
+		{
+			clear: both;
+		}
+
+
+/* Purchase Form Content Settings */
+
+	fieldset 
+	{
+	    margin-top: 1em;
+ 	    margin-bottom: 1em;
+	}
+
+	legend 
+	{
+	    color: white;
+	    font-weight: bold;
+	    font-size: 85%;
+	}
+
+	.formLayout 
+	{
+	    padding-top: 1em;
+	}
+
+	.formLayout label 
+	{
+	    float: left;
+	    width: 10.5em;
+	    text-align: right;
+	}
+
+	.formLayout input, .formLayout select 
+	{
+	    margin-left: 0.5em;
+	    margin-bottom: 0.5em;
+	}
+
+	.formLayout select 
+	{
+	    width: 11em;
+	}
+
+	.formLayout br 
+	{
+	    clear: both;
+	}
+
+	.error 
+	{
+	    color: red;
+	}
+
+	.notice 
+	{
+	    color: red;
+	    font-size: 67%;
+	    text-align: right;
+	}

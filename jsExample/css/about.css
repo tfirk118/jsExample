@@ -1,0 +1,68 @@
+/* About Us Page Content Settings */
+
+	/* Cassy Williams Information Settings */
+	/* Floats image left, and text right; spacing appropriately */
+
+		div#content div#williams
+		{
+			margin-top: 50px;
+			margin-bottom: 130px;
+		}
+
+		div#content div#williams div#williamsImage
+		{
+			display: inline;
+			margin-left: 10px;
+			float: left;
+		}
+
+		div#content div#williams div#williamsBio
+		{
+			display: block;
+			padding-left: 370px;
+			padding-right: 10px;
+			text-align: center;
+		}
+
+	/* Alaria Johnson Information Settings */
+	/* Floats image right, and text left; spacing appropriately */
+
+
+		div#content div#johnson
+		{
+			margin-bottom: 270px;
+		}
+
+		div#content div#johnson div#johnsonImage
+		{
+			display: inline;
+			margin-right: 10px;
+			float: right;
+		}
+
+		div#content div#johnson div#johnsonBio
+		{
+			display: block;
+			padding-left: 10px;
+			padding-right: 330px;
+			text-align: center;
+		}
+
+	/* Brent Sanders Information Settings */
+	/* Floats image left, and text right; spacing appropriately */
+
+		div#content div#sanders div#sandersImage
+		{
+			display: inline;
+			margin-left: 10px;
+			float: left;
+		}
+
+		div#content div#sanders div#sandersBio
+		{
+			display: block;
+			padding-left: 320px;
+			padding-right: 10px;
+			margin-bottom: 320px;
+			text-align: center;
+		}

@@ -1,0 +1,16 @@
+/* Home Page Content Settings */
+
+	div#content div#welcome
+	{
+		margin: 50px 10px auto 10px;
+		font-size: 120%;
+		text-align: center;
+	}
+
+	/* Deffinition term settings */
+
+	div#content div#welcome dt
+	{
+		margin: 25px auto 5px auto;
+		text-decoration: underline;
+	}

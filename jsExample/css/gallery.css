@@ -1,0 +1,85 @@
+/* Gallery Pages Content Settings */
+
+	/* Spacing for Subtitle */
+
+		div#content h1
+		{
+			margin: 50px auto 5px auto;
+		}
+
+	/* Hide Image "name" list */
+
+		div#content ul#imgLists
+		{
+			display: none;
+		}
+
+	/* Image Title Text-style & Spacing Settings */
+
+		div#content span
+		{
+			display: block;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			text-align: center;
+			font-weight: bold;
+			font-size: 110%;	
+		}
+
+	/* Image Table Settings */
+
+		div#content table
+		{
+			width: 990px;
+			border: 0px;
+		}
+
+		div#content td
+		{
+			height: 250px;
+			width: 200px;
+		}
+
+	/* Horizontal Line Above Button Settings (width) */
+
+		div#content hr
+		{
+			width: 95%;
+		}
+
+	/* Gallery Button Settings */
+	/* Sets Buttons Side-By-Side In The Center of the Division */
+	/* Sets Mouse-Over Effects, Including Cursor Type (dependent on class) */
+
+		div#content div#buttons
+		{
+			height: 65px;
+			background-color: #262626;
+		}
+
+		div#content div#buttons div#back
+		{
+			width: 50%;
+			float: left;
+		}
+
+		div#content div#buttons div#back img
+		{
+			float: right;
+		}
+
+		div#content div#buttons div#next
+		{
+			width: 50%;
+			float: right;
+		}
+
+		div#content div#buttons img.enabled
+		{
+			cursor: pointer;
+		}
+
+		div#content div#buttons img.disabled
+		{
+			cursor: default;
+		}

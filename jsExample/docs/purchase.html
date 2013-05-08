@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--XML Declaration (Above)-->
+<!--Script DTD (Below)-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--Root Element-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<!--Head-->
+	<head>
+		<!--Title of Webpage-->
+		<title>The Art Guild Purchase Page</title>
+		<!--Link to general CSS document-->
+		<link rel="stylesheet" type="text/css" href="../css/general.css" />
+		<!--Link to specific CSS document-->
+		<link rel="stylesheet" type="text/css" href="../css/purchase.css" />
+		<!--Link to JavaScript documents-->
+		<script type="text/javascript" src="../js/purchase.js"></script>
+		<script type="text/javascript" src="../js/purchase_library.js"></script>
+	</head>
+	<!--Body-->
+	<body>
+		<!--Division for wrapper-->
+		<div id="wrapper">
+			<!--Division for header-->
+			<div id="header">
+				<!--Logo (links to home)-->
+				<a href="../index.html"><img src="../img/library/logo.gif" alt="The Art Guild" height="200" /></a>
+				<!--Page title-->
+				<img src="../img/library/titlePurchase.gif" alt="Purchase" height="200" width="736" />
+			</div>
+
+			<!--Division for index-->
+			<div id="index">
+				<!--Link navigation within site-->
+				<ul class="navigation">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="./reproduction.html">Reproductions</a></li>
+					<li><span id="notLink">Original Works</span>
+						<ul>
+							<li><a href="./abstract.html">Abstract</a></li>
+							<li><a href="./photography.html">Photography</a></li>
+							<li><a href="./digital.html">Digital</a></li>
+						</ul>
+					</li>
+					<li><a href="./restoration.html">Restoration</a></li>
+					<li><a href="./about.html">About Us</a></li>
+					<li><a href="./contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+
+			<!--Division for content-->
+			<div id="content">
+				<!--h1 tag to hold picture title-->
+				<h1 id="title" class="center"></h1>
+				<!--h2 tag to hold picture artist name-->
+				<h2 id="artist" class="center"></h2>
+
+				<!--Division to hold the picture image (to float left), which will link to a seperate page of just the picture image-->
+				<div id="pictureDiv"><a href="" id="pictureLink" target="_blank"><img src="" alt="picture" id="pictureImage" /></a></div>
+				<!--Division to hold the frame image (to float right), which will link to a seperate page of just the frame image-->
+				<div id="frameDiv"><a href="" id="frameLink" target="_blank"><img src="../img/frames/noFrame.gif" alt="frame" id="frameImage" /></a></div>
+
+				<!--Division for the purchase form-->
+				<div id="purchaseForm">
+					<!--Purchase form (action will never be called)-->
+					<form action="register_account.html" method="get" id="purchase_form">
+						<!--Fieldset for picture specifications-->
+						<fieldset>
+							<!--Fieldset legend-->
+							<legend>Picture Specification</legend>
+							<!--Division for fieldset inputs-->
+							<div class="formLayout">
+								<!--Dimmensions Label-->
+								<label for="dimmensions">Dimmensions ( $5/in<sup>2</sup> ):</label>
+									<!--Select input for picture height-->
+									<select name="height" id="height">
+										<option value="">Height In Inches:</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="16">16</option>
+										<option value="18">18</option>
+										<option value="20">20</option>
+										<option value="22">22</option>
+										<option value="24">24</option>
+										<option value="30">30</option>
+										<option value="36">36</option>
+										<option value="48">48</option>
+										<option value="52">52</option>
+									</select>
+									<!--Span for possible height error message-->
+									<span id="height_error">&nbsp;</span>
+
+									<!--Select input for picture width-->
+									<select name="width" id="width">
+										<option value="">Width In Inches:</option>
+										<option value="12">12</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="20">20</option>
+										<option value="24">24</option>
+										<option value="28">28</option>
+										<option value="30">30</option>
+										<option value="36">36</option>
+										<option value="40">40</option>
+										<option value="48">48</option>
+										<option value="64">64</option>
+										<option value="78">78</option>
+									</select>
+									<!--Span for possible width error message-->
+									<span id="width_error">&nbsp;</span>
+									<!--Break for newline-->
+									<br />
+
+								<!--Frame label-->
+								<label for="frame">Frame:</label>
+									<!--Select input for frame selection-->
+									<select name="frame" id="frame">
+										<option value="">Select One:</option>
+										<option value="50">Frame 1 ( $50/in )</option>
+										<option value="40">Frame 2 ( $40/in )</option>
+										<option value="30">Frame 3 ( $30/in )</option>
+										<option value="20">Frame 4 ( $20/in )</option>
+										<option value="10">Frame 5 ( $10/in )</option>
+										<option value="0">No Frame ( $0 )</option>
+									</select>
+									<!--Span for possible frame error message-->
+									<span id="frame_error">&nbsp;</span>
+									<!--Break for newline-->
+									<br />
+
+								<!--Price label-->
+								<label for="price">Price:</label>
+									<!--Space characters for spacing-->
+									<!--Span for price display-->
+									&nbsp;&nbsp;<span id="price">&nbsp</span>
+							</div>
+						</fieldset>
+						
+						<!--Fieldset for contact information-->
+						<fieldset>
+							<!--Fieldset legend-->
+							<legend>Contact Information</legend>
+							<!--Division for fieldset inputs-->
+							<div class="formLayout">
+								<!--Email label-->
+								<label for="email">E-Mail:</label>
+									<!--Textbox input for email-->
+									<input type="text" name="email" id="email" />
+									<!--Span for possible email validation error message, originally contains validation requirement message-->
+									<span id="email_error">Must be a valid email address.</span>
+									<!--Break for newline-->
+									<br />
+
+								<!--First Name label-->
+								<label for="first_name">First Name:</label>
+									<!--Textbox input for first name-->
+									<input type="text" name="first_name" id="first_name" />
+									<!--Span for possible first name error message-->
+									<span id="first_name_error">&nbsp;</span>
+									<!--Break for newline-->
+									<br />
+
+								<!--Last Name label-->
+								<label for="last_name">Last Name:</label>
+									<!--Textbox input for last name-->
+									<input type="text" name="last_name" id="last_name" />
+									<!--Span for possible last name error message-->
+									<span id="last_name_error">&nbsp;</span>
+									<!--Break for newline-->
+									<br />
+
+								<!--Address label-->
+								<label for="address">Address:</label>
+									<!--Textbox input for address-->
+									<input type="text" name="address" id="address" />
+									<!--Span for possible address error message-->
+									<span id="address_error">&nbsp;</span>
+									<!--Break for newline-->
+									<br />
+
+								<!--City label-->
+								<label for="city">City:</label>
+									<!--Textbox input for city-->
+									<input type="text" name="city" id="city" />
+									<!--Span for possible city error message-->
+									<span id="city_error">&nbsp;</span>
+									<!--Break for newline-->
+									<br />
+
+								<!--State label-->
+								<label for="state">State:</label>
+									<!--Textbox input for state-->
+									<input type="text" name="state" id="state" maxlength="2"/>
+									<!--Span for possible state validation error message, originally contains validation requirement message-->
+									<span id="state_error">Use 2 character abbreviation.</span>
+									<!--Break for newline-->
+									<br />
+
+								<!--Zip Code label-->
+								<label for="zip">ZIP Code:</label>
+									<!--Textbox input for zip code-->
+									<input type="text" name="zip" id="zip" />
+									<!--Span for possible zip code validation error message, originally contains validation requirement message-->
+									<span id="zip_error">Use 5 or 9 digit ZIP code.</span>
+									<!--Break for newline-->
+									<br />
+
+								<!--Phone Number label-->
+								<label for="phone">Phone Number:</label>
+									<!--Textbox input for phone number-->
+									<input type="text" name="phone" id="phone" />
+									<!--Pan for possible phone number validation error message, originally contains validation requirement message-->
+									<span id="phone_error">Use 999-999-9999 format.</span>
+									<!--Break for newline-->
+									<br />
+							</div>
+						</fieldset>
+
+						<!--Fieldset for payment information-->
+						<fieldset>
+							<!--Fieldset legend-->
+							<legend>Payment Information</legend>
+							<!--Division for fieldset inputs-->
+							<div class="formLayout">
+								<!--Credit Card Type label-->
+								<label for="card_type">Card Type:</label>
+									<!--Select input for credit card type-->
+									<select name="card_type" id="card_type">
+										<option value="">Select One:</option>
+										<option value="m">MasterCard</option>
+										<option value="v">Visa</option>
+										<option value="d">Discover</option>
+										<option value="a">American Express</option>
+									</select>
+									<!--Span for possible credit card type error message-->
+									<span id="card_type_error">&nbsp;</span>
+									<!--Break for newline-->
+									<br />
+
+								<!--Credit Card Number label-->
+								<label for="card_number">Card Number:</label>
+									<!--Textbox input for credit card number-->
+									<input type="text" name="card_number" id="card_number" />
+									<!--Span for possible credit card number validation error message, originally contains validation requirement message-->
+									<span id="card_number_error">Use 1111-2222-3333-4444 format.</span>
+									<!--Break for newline-->
+									<br />
+
+								<!--Credit Card Expiration Date label-->
+								<label for="exp_date">Expiration Date:</label>
+									<!--Textbox input for expiration date-->
+									<input type="text" name="exp_date" id="exp_date" />
+									<!--Span for possible expiration date validation error message, originally contains validation requirement message-->
+									<span id="exp_date_error">Use mm/yyyy format.</span>
+									<!--Break for newline-->
+									<br />
+							</div>
+						</fieldset>
+
+						<!--Fieldset for purchase confirmation-->
+						<fieldset>
+							<!--Fieldset legend-->
+							<legend>Confirm Purchase</legend>
+							<!--Division for fieldset inputs-->
+							<div class="formLayout">
+								<!--Empty label for spacing-->
+								<label>&nbsp;</label>
+									<!--Button input to confirm purchase-->
+									<input type="button" id="purchase" value="Purchase" />
+									<!--Button input to reset form-->
+									<input type="button" id="reset_form" value="Reset" />
+								<!--Break for newline-->
+								<br />
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+
+			<!--Division for footer-->
+			<div id="footer">
+				<!--Line of navigational links, separated by blue dot images-->
+				<p class="center" id="footerIndex">
+					<a href="../index.html">Home</a> 
+						<img src="../img/library/blueDot.gif" alt="-" />
+					<a href="./reproduction.html">Reproductions</a>
+						<img src="../img/library/blueDot.gif" alt="-" />
+					<a href="./abstract.html">Abstract</a>
+						<img src="../img/library/blueDot.gif" alt="-" />
+					<a href="./photography.html">Photography</a>
+						<img src="../img/library/blueDot.gif" alt="-" />
+					<a href="./digital.html">Digital</a>
+						<img src="../img/library/blueDot.gif" alt="-" />
+					<a href="./restoration.html">Restoration</a>
+						<img src="../img/library/blueDot.gif" alt="-" />
+					<a href="./about.html">About</a>
+						<img src="../img/library/blueDot.gif" alt="-" />
+					<a href="./contact.html">Contact</a>
+				</p>
+				<!--Copywrite Information-->
+				<p>&copy; TheArtGuild Association</p>
+			</div>
+		</div>
+
+		<!--W3C validation link-->
+            	<p><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" id="w3c" /></a></p>
+	</body>
+</html>

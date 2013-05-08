@@ -1,0 +1,174 @@
+/* Body settings (background image) */
+
+	body
+	{
+		background-color: black;
+		background-image: url('../img/library/gradient.jpg');
+		background-repeat: repeat-x;
+	}
+
+/* General link settings */
+
+	a:link, a:active, a:visited
+	{
+		color: white;
+		text-decoration: none;
+	}
+
+	a:hover
+	{
+		color: white;
+	}
+
+/* navigation class for Navigation bar settings */
+
+	.navigation, .navigation ul 
+	{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	.navigation li 
+	{
+		float: left;
+		position: relative;
+		width: 166.66px;
+		height: 35px;
+		border: 0px solid black;
+		background-image: url('../img/library/buttonA.gif');
+		text-align: center;
+	}
+
+	/* To signify a index element as not a link */
+
+		.navigation li span#notLink
+		{
+			cursor: default;
+			display: block;
+			padding-top: 8px;
+		}
+
+	.navigation li a
+	{
+		padding-top: 8px;
+	}
+
+	.navigation a:link, .navigation a:visited 
+	{
+		display: block;
+		text-decoration: none;
+		color: white;
+	}
+
+	* html .navigation a 
+	{
+		width: 100%;
+	}
+
+	.navigation ul 
+	{
+		display: none;
+		position: absolute;
+		padding: 0;
+		margin-top: 6px;
+	}
+
+	.navigation ul li 
+	{
+		border: 0 none transparent;
+		font-size: 100%;
+		margin-bottom: -1px;
+		margin-top: 1px;
+		padding: 0;
+		opacity: 0.7;
+	}
+
+	.navigation li:hover
+	{
+		background-image: url('../img/library/buttonB.gif');
+	}
+
+	.navigation li:hover ul 
+	{
+		display: block;
+	}
+
+	.navigation ul li:hover
+	{
+		background-image: url('../img/library/buttonB.gif');	
+		opacity: 1;
+	}
+
+/* center class to center text */
+
+	.center
+	{
+		text-align: center;
+	}
+
+/* Wrapper settings (includes general text settings) */
+
+	div#wrapper
+	{
+		color: white;
+		width: 1000px;
+		margin: 0px auto 0px auto;
+	}
+
+/* Header settings */
+
+	div#header
+	{
+		margin: 0;
+	}
+
+	div#header img
+	{
+		border: none;
+	}
+
+/* General content settings */
+
+	div#content
+	{
+		background-color: #262626;
+		border: solid;
+		border-color: black;
+	}
+
+	div#content a:link, div#content a:active, div#content a:visited
+	{
+		color: #003cff;
+		text-decoration: none;
+	}
+
+	div#content a:hover
+	{
+		color: #4571ff;
+	}
+
+/* Footer settings */
+
+	div#footer
+	{
+		clear: both;
+		text-align: center;
+	}
+
+	div#footer p#footerIndex
+	{
+		word-spacing: 20px;
+	}
+
+	div#footer a
+	{
+		text-decoration: underline;
+	}
+
+/* w3c validation button settings */
+
+	img#w3c
+	{
+		border-style: none;
+	}
